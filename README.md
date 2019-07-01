@@ -33,16 +33,3 @@ A simple react application that lists projects by organization and its contribut
 - stylelint 9.x
 
 `npm run lint` / `npm run lint:styles`
-
-### Unit Testing
-
-- jest 23.x
-- enzyme 3.x
-
-`npm test`
-
-### End 2 End Testing
-
-- cypress 3.0.x
-
-`npm run test:e2e`
