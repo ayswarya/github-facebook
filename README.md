@@ -18,6 +18,8 @@ A simple react application that lists projects by organization and its contribut
 - react-hot-loader 4.x
 - redux-devtools (with browser plugin)
 
+### Local setup
+`npm install`
 `npm start`
 
 ### Building
