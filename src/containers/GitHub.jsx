@@ -26,6 +26,8 @@ const Sidebar = styled.div`
   background-color: white;
 `;
 
+const supportedOrgs = ['facebook']
+
 const OuterContainer = styled.div`
   display: table;
   width: 100%;
@@ -177,11 +179,11 @@ export class GitHub extends React.Component {
           <OuterContainer>
             <Sidebar className="sidenav">
               <ul data-type={orgName} style={{ listStyle: 'none', padding: 0 }}>
-                <Image
-                  style={{ width: '100%', height: 'auto' }}
-                  src={`${process.env.PUBLIC_URL}/media/icons/facebook.svg`}
-                  alt={this.getOwnerName(github.repos.data[orgName])}
-                />
+              {supportedOrgs.indexOf(orgName) !== -1 && <Image
+                style={{ width: '100%', height: 'auto' }}
+                src={`${process.env.PUBLIC_URL}/media/icons/${orgName}.svg`}
+                alt={this.getOwnerName(github.repos.data[orgName])}
+              />}
                 {github.repos.data[orgName].map(d => (
                   <li key={d.id} style={{ cursor: 'pointer' }}>
                     <a
@@ -237,7 +239,7 @@ export class GitHub extends React.Component {
                             {github.user.name && <b>{github.user.name}&ensp;|&ensp;</b>}
                             <span>{contributor.login}</span>
                             <br />
-                            <p>{github.user.bio}</p>
+                            <div style={{wordWrap: 'break-word'}}>{github.user.bio}</div>
                           </p>
                           <div style={{ width: '100%', overflow: 'auto' }}>
                             <div style={{ float: 'left', width: '33%' }}>
