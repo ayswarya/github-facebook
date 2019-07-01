@@ -22,6 +22,9 @@ A simple react application that lists projects by organization and its contribut
 `npm install`
 `npm start`
 
+The app uses 3000 port to start the server
+Open http://localhost:3000/org/facebook/projects - to list projects by facebook
+
 ### Building
 
 - webpack 4.x
