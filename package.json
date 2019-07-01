@@ -1,15 +1,13 @@
 {
-  "name": "react-redux-saga-boilerplate",
-  "title": "react-redux-saga-boilerplate",
-  "description": "React-Redux-Saga Boilerplate",
-  "version": "2019.2.0",
-  "author": "Gil Barbara <gilbarbara@gmail.com>",
+  "name": "github-facebook",
+  "title": "Githib-facebook app",
+  "description": "Using React, Redux, Saga",
+  "version": "2019.07.01",
+  "author": "Ayswarya <krsayswarya@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gilbarbara/react-redux-saga-boilerplate"
+    "url": ""
   },
-  "bugs": "https://github.com/gilbarbara/react-redux-saga-boilerplate/issues",
-  "license": "MIT",
   "keywords": [
     "React",
     "React-Router",
@@ -34,6 +32,7 @@
     "qs": "^6.6.0",
     "react": "^16.8.2",
     "react-app-polyfill": "0.2.1",
+    "react-burger-menu": "^2.6.10",
     "react-dom": "^16.8.2",
     "react-helmet": "^5.2.0",
     "react-inlinesvg": "^0.8.4",

@@ -5,22 +5,22 @@ import { appColor } from 'modules/theme';
 
 const px = value => (typeof value === 'number' ? `${value}px` : value);
 
-const grow = props => keyframes`
+const grow = () => keyframes`
   0% {
     height: 0;
     width: 0;
   }
 
   30% {
-    border-width: ${px(props.size && props.size / 2.5)};
+    border-width: 5px;
     opacity: 1;
   }
 
   100% {
     border-width: 0;
-    height: ${px(props.size)};
+    height: 100%;
     opacity: 0;
-    width: ${px(props.size)};
+    width: 100%;
   }
 `;
 
@@ -139,7 +139,7 @@ const Loader = props => {
     html = (
       <LoaderRotate {...props}>
         <LoaderRotateSVG {...props}>
-          <LoaderRotateCircle {...props} cx="50" cy="50" r="20" fill="none" strokeWidth={2} />
+          <LoaderRotateCircle {...props} cx="50" cy="50" r="50" fill="none" strokeWidth={2} />
         </LoaderRotateSVG>
       </LoaderRotate>
     );
@@ -171,7 +171,7 @@ Loader.propTypes = {
 Loader.defaultProps = {
   block: false,
   color: appColor,
-  size: 32,
+  size: 60,
   type: 'grow',
 };
 

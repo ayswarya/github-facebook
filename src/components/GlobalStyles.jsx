@@ -18,8 +18,10 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: Lato, sans-serif;
-    font-size: 16px; /* stylelint-disable unit-blacklist */
+    font-size: 16px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    font-weight:400;
+    -webkit-font-smoothing: antialiased;
     margin: 0;
     min-height: 100vh;
     padding: 0;

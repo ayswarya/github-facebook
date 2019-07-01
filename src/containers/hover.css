@@ -1,0 +1,71 @@
+.item {
+  position: relative;
+  background-color: white;
+}
+
+.overlay {
+  background: white;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: background-color 1s ease-in, opacity 1s ease-in;
+  transition: background-color 1s ease-in, opacity 1s ease-in;
+}
+
+.item:hover .overlay {
+  background-color: white;
+  opacity: 1;
+  -webkit-transition: background-color 1s ease-in, opacity 1s ease-in;
+  transition: background-color 1s ease-in, opacity 1s ease-in;
+}
+
+.sidenav {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: black;
+}
+
+.sidenav a.selected {
+  color: black;
+  text-decoration: underline;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+.ellipsis {
+  white-space: nowrap;
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
