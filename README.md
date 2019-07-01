@@ -22,9 +22,8 @@ A simple react application that lists projects by organization and its contribut
 `npm install`
 `npm start`
 
-The app uses 3000 port to start the server
-Open http://localhost:3000/org/<org_name>/projects - to list projects of a orgnaization (eg: facebook, google)
-
+The app by default runs on port 3000, Open http://localhost:3000/org/<org_name>/projects - to list projects of a orgnaization (eg: facebook, google)
+eg: http://localhost:3000/org/facebook/projects
 
 ### Building
 
